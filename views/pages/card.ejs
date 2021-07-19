@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/f2e0e49a34.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta charset="utf-8" />
+    <link rel="icon" href="/static/favicon.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <title>Hi Me!</title>
+    <link
+      href="../../static/css/main.35532717.chunk.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body class="card">
+    <section
+      class="container-profile"
+      style="
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: #0bacdd;
+      "
+    >
+      <div>
+        <div class="container-profile__containercard js-palette2">
+          <div class="profile__name palette<%= palette %>">
+            <h2
+              class="
+                container-profile__containercard__name
+                js-nameProfile
+                palette<%=
+                palette
+                %>__color2
+              "
+            >
+              <%= name %>
+            </h2>
+            <h3
+              class="container-profile__containercard__profesion js-rolProfile"
+            >
+              <%= job %>
+            </h3>
+          </div>
+
+          <div
+            class="container-profile__containercard__img js__profile-image"
+            style="background-image: url('<%= image %>')"
+          ></div>
+
+          <div class="container-profile__containerrrss">
+            <a
+              href="tel:<%= phone %>"
+              target="_blank"
+              class="
+                container-profile__containerrrss__rrss
+                js-phone
+                palette<%=
+                palette
+                %>__circle
+              "
+            >
+              <i class="fas fa-mobile-alt"></i>
+            </a>
+            <a
+              href="email:<%= email %>"
+              target="_blank"
+              class="
+                container-profile__containerrrss__rrss
+                js-mail
+                palette<%=
+                palette
+                %>__circle
+              "
+            >
+              <i class="far fa-envelope"></i>
+            </a>
+            <a
+              href="linkedin:<%= linkedin %>"
+              target="_blank"
+              class="
+                container-profile__containerrrss__rrss
+                js-linkedin
+                palette<%=
+                palette
+                %>__circle
+              "
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="github:<%= github %>"
+              target="_blank"
+              class="
+                container-profile__containerrrss__rrss
+                js-github
+                palette<%=
+                palette
+                %>__circle
+              "
+            >
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
